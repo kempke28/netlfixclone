@@ -1,1 +1,26 @@
+import React from "react";
+import faqsData from "../fixtures/faqs.json";
 
+import { Accordion } from "../components";
+import { OptForm } from "../components";
+
+export function FaqsContainer() {
+    return (
+        <Accordion>
+            <Accordion.Title>Frequently asked questions</Accordion.Title>
+            {faqsData.map((item) => (
+                <Accordion.Item key={item.id}>
+                    <Accordion.Header>{item.header}</Accordion.Header>
+                    <Accordion.Body>{item.body}</Accordion.Body>
+                </Accordion.Item>
+            ))}
+
+            <OptForm>
+                <OptForm.Input placeholder="Email address"/>
+                <OptForm.Button>Try it now</OptForm.Button>
+                <OptForm.Break/>
+                <OptForm.Text>Create a membership</OptForm.Text>
+            </OptForm>
+        </Accordion>
+    );
+}
