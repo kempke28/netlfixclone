@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Profiles /> renders the <Profiles /> with populated data 1`] = `
+<div
+  class="Profiles__Container-sc-1ytbi8g-0 kurRtl"
+>
+  <h1
+    class="Profiles__Title-sc-1ytbi8g-1 hFIgFh"
+  >
+    Whos is watching
+  </h1>
+  <ul
+    class="Profiles__List-sc-1ytbi8g-2 dndWpG"
+  >
+    <li
+      class="Profiles__Item-sc-1ytbi8g-5 fdNtbE"
+      data-testid="user-profile"
+    >
+      <img
+        class="Profiles__Picture-sc-1ytbi8g-4 jYuutZ"
+        data-testid="profile-picture"
+        src="/images/users//images/dod.png.png"
+      />
+      <p
+        class="Profiles__Name-sc-1ytbi8g-3 bcVpUK"
+      >
+        Bob
+      </p>
+    </li>
+  </ul>
+</div>
+`;
