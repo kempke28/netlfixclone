@@ -46,12 +46,12 @@ export default function SignUp() {
             <HeaderContainer>
                 <Form>
                     <Form.Title>Sign Up</Form.Title>
-                    {error && <Form.Error>{error}</Form.Error>}
+                    {error && <Form.Error data-testid="error">{error}</Form.Error>}
                     <Form.Base onSubmit={handleSignUp} method="POST">
                         <Form.Input placeholder="First Name" value={firstName}
                                     onChange={({target}) => setFirstName(target.value)}/>
                         <Form.Input placeholder="Email Address" value={emailAddress}
-                                    onChange={({target}) => setEmailAddress(target.value)}/>
+                                    onChange={({target}) => setEmailAddress(target.value)} data-testid="sign-up"/>
                         <Form.Input placeholder="Password" type="password" autocomplete="off" value={password}
                                     onChange={({target}) => setPassword(target.value)}/>
                         <Form.Submit disabled={isInvalid} type="submit">Sign In</Form.Submit>
